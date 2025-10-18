@@ -244,9 +244,10 @@ footer p {
   align-content: center;
   color: #fff;
 }
-
 .profile-photo {
-  width: 15%;
+  width: clamp(64px, 15%, 140px);
+  max-width: 140px;
+  min-width: 64px;
   aspect-ratio: 1 / 1;
   display: flex;
   flex: 0 0 auto;
@@ -266,6 +267,22 @@ footer p {
   object-position: center;
   display: block;
 }
+
+
+.logo {
+  width: clamp(40px, 6vw, 64px);
+}
+
+.main-information {
+  width: clamp(260px, 62%, 760px);
+}
+
+.card-tech,
+.adv-disadv,
+.qualities-list {
+  width: clamp(280px, 40%, 820px);
+}
+
 
 .email-button {
   display: inline-flex;
